@@ -29,13 +29,13 @@
     <header class="text-gray-600 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-20 h-30 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg>
-            <span class="ml-3 text-xl"> Cuss Rage</span>
+            <span class="ml-3 text-5xl"> Cuss Rage</span>
           </a>
           <nav class="md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <a class="ml-3 hover:text-gray-900">contribute to the india's Biggest abusive word dataset!!</a>
+            <h3 class="ml-3 hover:text-gray-900">contribute to the india's Biggest abusive word dataset!!</h3>
             
           </nav>
           
@@ -49,15 +49,21 @@
                                     <form method="post" autocomplete="off" name="google-sheet">
                                         
                                         <div class="form-group">
-                                            <select class="custom-select" type="text" name="Language" value="" required="">
-                                                <option selected>Language</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                              </select>
+
+
+                                            <select class="custom-select" type="text" name="Language" value="" required=".">
+                                                <option value="" disabled="" selected="">Language
+                                                </option>
+                                                <option value="0">Not want to mention</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="Graduated">Graduated</option>
+                                            </select>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" name="Gaali" class="form-control" placeholder="Gaali *" value="" required=""/>
+                                            <input type="text" name="Gaali" class="form-control" placeholder="Abusive word*" value="" required=""/>
                                         </div>
                                         
                                         
@@ -84,7 +90,6 @@
             })
           </script>
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
 </body>
 </html>
