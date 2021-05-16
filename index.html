@@ -61,10 +61,12 @@
             const form = document.forms['google-sheet']
           
             form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Gaali dene ke liye thamk u🙏..."))
-                .catch(error => console.error('Error!', error.message))
+                    e.preventDefault()
+                    fetch(scriptURL, {
+                        method: 'POST',
+                        body: new FormData(form)
+                    }).then(response => alert("Thanks! Your Confession has been recorded!")).catch(error => console.error('Error!', error.message))
+                    setTimeout("location.href = 'thankyou.html';", 5000);
             })
           </script>
 
