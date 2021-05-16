@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <style>
 
             .btnSubmit
@@ -15,7 +15,7 @@
                 border-radius: 1rem;
                 padding: 1.5%;
                 color: #fff;
-                background-color: #03612e;
+                background-color: #ef4444;
                 border: none;
                 cursor: pointer;
                 margin-right: 6%;
@@ -26,11 +26,25 @@
 
 </head>
 <body>
-    
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl"> Cuss Rage</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900">contribute to the india's Biggest abusive word dataset!!</a>
+            
+          </nav>
+          
+        </div>
+      </header>
  
-                            Cuss Rage
+                           
                             
-                                contribute to the india's Biggest abusive word dataset!! 
+                                <div class="container">
                                 
                                     <form method="post" autocomplete="off" name="google-sheet">
                                         
@@ -48,14 +62,14 @@
                                         
                                         
                                         <div class="form-group">
-                                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
+                                            <input type="submit" name="submit" class="btnSubmit btn-block " value="Submit" />
                                         </div>
                                     </form>
                                 
                 </div>
             </div>
         </div>
-          
+    </div>
           <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbyHGOSVKPWzM7lTiCZYs3GH01uV1wSCGfFIPoRRRjGOzSioTO8/exec'
             const form = document.forms['google-sheet']
@@ -65,8 +79,8 @@
                     fetch(scriptURL, {
                         method: 'POST',
                         body: new FormData(form)
-                    }).then(response => alert("Thanks! Your Confession has been recorded!")).catch(error => console.error('Error!', error.message))
-                    setTimeout("location.href = 'thankyou.html';", 5000);
+                    }).then(response => setTimeout("location.href = 'index.html';", 5000)).catch(error => console.error('Error!', error.message))
+                    
             })
           </script>
 
