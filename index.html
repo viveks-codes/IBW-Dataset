@@ -54,21 +54,37 @@
                                             <select class="custom-select" type="text" name="Language" value="" required=".">
                                                 <option value="" disabled="" selected="">Language
                                                 </option>
-                                                <option value="0">Not want to mention</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="Graduated">Graduated</option>
+                                               <option value="Assamese">Assamese</option>
+  <option value="Bengali (Bangla)">Bengali (Bangla)</option>
+  <option value="Bodo">Bodo</option>
+  <option value="Dogri">Dogri</option>
+  <option value="Gujarati">Gujarati</option>
+  <option value="Hindi">Hindi</option>
+  <option value="Kannada">Kannada</option>
+  <option value="Kashmiri">Kashmiri</option>
+  <option value="Konkani">Konkani</option>
+  <option value="Maithili">Maithili</option>
+  <option value="Malayalam">Malayalam</option>
+  <option value="Meitei">Meitei</option>
+  <option value="Marathi">Marathi</option>
+  <option value="Nepali">Nepali</option>
+  <option value="Odia">Odia</option>
+  <option value="Punjabi">Punjabi</option>
+  <option value="Sanskrit">Sanskrit</option>
+  <option value="Santali">Santali</option>
+  <option value="Sindhi">Sindhi</option>
+  <option value="Tamil">Tamil</option>
+  <option value="Telugu">Telugu</option>
+  <option value="Urdu">Urdu</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" name="Gaali" class="form-control" placeholder="Abusive word*" value="" required=""/>
+                                            <input type="text" name="Gaali" class="form-control" placeholder="Abusive word*" value="" id=gta"required=""/>
                                         </div>
                                         
                                         
                                  <div class="form-group">
-                                            <input type="submit" name="submit" class="btnSubmit btn-block " value="Submit" />
+                                            <input type="submit" name="submit" class="btnSubmit btn-block "  value="Submit" />
                                         </div>
                                     </form>
                                 
@@ -117,14 +133,14 @@
             const scriptURL = 'https://script.google.com/macros/s/AKfycbyHGOSVKPWzM7lTiCZYs3GH01uV1wSCGfFIPoRRRjGOzSioTO8/exec'
             const form = document.forms['google-sheet']
           
-            form.addEventListener('submit', e => {
+             form.addEventListener('submit', e => {
                     e.preventDefault()
                     fetch(scriptURL, {
                         method: 'POST',
                         body: new FormData(form)
-                    }).then(response => setTimeout("location.href = 'index.html';", 5000)).catch(error => console.error('Error!', error.message))
-                    
-            })
+                    }).then(response => alert("Thanks!")).catch(error => console.error('Error!', error.message))
+                    setTimeout("location.href = 'index.html';", 5000);
+                  })
           </script>
 
         
