@@ -1,3 +1,34 @@
+"""REPLACE = {'a': '@', 'i': '*', 'o': '*', 'u': '*', 'v': '*', 
+ 'l': '1', 'e': '*', 's': '$', 't': '7'}
+from itertools import product
+
+
+
+
+def Leet2Combos(word):
+    possibles = []
+    for l in word.lower():
+        ll = REPLACE.get(l, l)
+        possibles.append( (l,) if ll == l else (l, ll) )
+    return [ ''.join(t) for t in product(*possibles) ]
+s= """Chodon Boiraagi
+Chodon Idli
+chood
+chudir bhai
+Chudir Bhai
+Chudir Pola
+dan-da
+dhon
+dofla hetta"""
+textfile = open('textfile.txt', 'a')
+words = s.split('\n')
+for word in words:
+    lst = Leet2Combos(word)
+    a = ''+"\n".join(lst)
+    textfile.write(a+"\n")
+
+textfile.close()
+"""
 REPLACE = {'a': '@', 'i': '*', 'o': '*', 'u': '*', 'v': '*', 
  'l': '1', 'e': '*', 's': '$', 't': '7'}
 from itertools import product
@@ -41,16 +72,27 @@ haram jadi
 Hauwa
 hetta muka ath bori dimo
 hetta, bodha, shauwaa
-Kalu, Calou, Kalou,Blackie, Keltu, Kelo, Kolo Toure, Djimi Traore, Kalo Hulo, Nigga
+Kalu
+Calou
+Kalou
+Blackie
+Keltu
+Kelo
+Kolo Toure
+Djimi Traore
+Kalo Hulo
+Nigga
 khanki
 khanki chudi magir gude poka
-khanki/maggi
+khanki
+maggi
 khankir chele
 Khankir Pola
 khobis or goror khobis
 Kuth-tar Bachcha
 Kuthar Bacha
-Kuththar Baiccha (Baich-cha)
+Kuththar
+Baiccha Baich-cha
 Kuttar Bhaccha
 kuttar chod
 Kuttar gu
@@ -84,7 +126,7 @@ thor maa suda
 thor maar bothoy kha
 thore astha gao eh sudeh
 thumar futki marthum
-Thumi amar nunu khoa, onek mishti
+nunu
 Thuuii Bandhorr
 Thuuii Gaadhaa
 to-mar ma hetta
@@ -123,8 +165,8 @@ makhal
 muri kha
 Noakhailla
 randi magi
-thor maa khai lai moo
-thor maar bosoi khai see
+khai lai moo
+bosoi khai see
 Tomar maar putkey fatamu .
 Tor babar bichi fatabo
 Tor mar sawa kha
@@ -195,7 +237,6 @@ gaar marao
 gaar maraye duniya
 gaar me daal le
 gadchat
-gopal gaurav
 jhatwa
 kiski maiyaa kutta biyayi
 laar
@@ -288,8 +329,6 @@ Moht
 mota jijah
 nago choido
 Nakhodiya
-Namuno
-Narender Modi
 pikina
 Pikina
 pim pim
@@ -304,39 +343,34 @@ salu gut`ti
 Sandas
 suwwar jewu dachu
 taari bai no aghano
-Taari ma parasevo tya-reh e tuti kareh che!
 Tara baap ni gaan
 Taree gaar ma lowroh
-Taree Ghaar Ma Doh Ladah
-tari bosri kaapi karwa
+bhosri
+tari bosri
 tari dagri
-tari gaand mare karya kutra balada
-tari gandayli kari koyli dagri
-Tari ma na bubla sukai-gya
-tari ma ne hadi kadhto hathi chode
+tari gaand
+bulbla
+tari ma ne
 tari ma ni putti
+tari maani putli
 tari ma no poplo
-Tari maa na babla chusu
-Tari maa na bhosda ma maro lodo
-Tari maa na modha ma maro lodo
+Tari maa na babla
+Tari maa na bhosda 
+maro lodo
 Tari maa ne chodu
 Tari maa ni taturi
 tari mai ni gand
-tari mani choot ma derka bole
-Taro baap tane chadeche
 tere ma nu hinta kar
-teree maah gaderi
-thari ma ne bozro maro loro nakhides
+teree maa gaderi
 Thari Ma Ni Ghaan
 Tusat
-Tutelli nirodh no aulad
+nirodh
 bahan ke lawde
 Bawali gand
 Bhen ke dine
 chudhu ke chodde
 Dhi ke lawde
 Dhichod
-Domesaks danso danlo motar!
 bhoor
 chuttar
 chuttari
@@ -346,11 +380,10 @@ Jhulaniya
 Madhar chod
 shivom lal
 teri maichod
-miya ka katela lund
-miyan
-miyan bhadvi
-miyan rand
-miye log madharchod
+katela lund
+bhadvi
+rand
+madharchod
 chut
 chut ke baal
 chut ke dhakkan
@@ -415,9 +448,10 @@ suar
 suar ki aulad
 tatte
 tatti
-teri maa ka bhosada
-teri maa ka boba chusu
-teri maa ki chut
+bhosada
+boba
+chusu
+chut
 tharak
 tharki
 bsdk
@@ -457,7 +491,6 @@ Saala kutta
 Saali kutti
 Soover
 Tatti
-Hindi Swear Words
 Bahen Chod
 Bahen ke laude
 Bahen ke takke
@@ -472,13 +505,13 @@ Kutte ke tatte
 Maadher chod
 Padma
 Raand ka jamai
-Randhwa (or randwa)
+Randhwa
+randwa
 Rundi
 Rundi ka bacha
 Rundi Ki bachi
 Soower ke bachche
 Ullu ke pathe
-Hindi Dirty Words
 Bandaa
 Booblay
 BhonsRi-Waalaa
@@ -505,7 +538,6 @@ Mammey mumm-aye
 Tatte Masalna
 Toto
 Toota hua lund
-Hindi Profane Words
 Backar chodu
 Bhand khau
 Bhandwe ki aulad
@@ -513,10 +545,11 @@ Bhosad Chod
 Bumchod
 Bur ki chatani
 Cuntmama
-Chipkali ke chut ke pasine
-Chipkali ke gaand ke pasine
-Chipkali ke jhaat ke baal
-Chippkali ke jhaant ke paseene
+chut ke pasine
+gaand ke pasine
+jhaat ke baal
+Chippkali ke 
+jhaant
 Chodela
 Chodu bhagat
 Chhola Phudakna
@@ -528,10 +561,8 @@ Choot ke bhoot
 Chut ke dhakkan
 Chut mari ke
 Choot marani ka
-Chut ke pasine mein talay huye bhajiye
+Chut ke pasine
 Chup Ke Chut Hai
-Fatey condom kay natije
-Fatay huay lundtopi ka result
 Gaandu
 Gaandfat
 Gaandmasti
@@ -553,65 +584,46 @@ Lavde ke baal
 Maa ke bhadwe
 Muth maar
 Parichod
-Phatele Nirodh ke Natije
 Pucchi
 Raandi baajer
 Rundi ko choud
 Rubber bhosda
 Sadi hui gand
-Tera adha Nirodh mein rah gaya
-Hindi Obscene Words
 Apna land choos
-Apni gaand mein muthi daal
-Apni ma ko ja choos
-Chinaal ke gadde ke nipple ke baal ke joon
-Chullu bhar muth mein doob mar
+Chinaal 
+muth
 Gand Ka Khatmal
 Gandkate Kutte
 Gaand mein bambu
 Gaand main lassan
 Gaand main danda
 Gaand main keera
-Hazaar lund teri gaand main
 Jaa Apni Bajaa
-Jab tu paida hua tow aagey se ya peechey se nikla tha chutiya?
-Kahe ko kha raha hai chut ki chapati aur lund ka beja?
-Kali Choot Ke Safaid Jhaat
-Kutte ke poot, teri maa ki choot
-Lo, mera lund anpi behen ko de do, agar khud na chod paya
+chuttiya
+Choot 
+Jhaat
+teri maa ki choot
 Lund Chus
 Ma chudi
-Mein teri maa ko teri bahen ki choot mein chodoonga aur tera baap laltern lekar aayega.
-Mein teri maa ko liya tha uski suhaag raat pei.
-Mera chunni choos
-Meri lund choos
-Mere Chuus Maro
-Na choot, na chooche, nakhre noor jahan ke!
-Raand ka pati
-Rundi ko chod
-Rundi ki tatti pe baithnewaali makkhi
-Rundi ke tatti pe biathne wala makhi
-Terey baad di gaand wich danda ghussa ker rakh dhungi.
-Teri behen ka launda rubber ka 
-Theri Biwi ko Tere Saamne Chodhunga
-Teri Gand Mein Haathi Ka Lund
-Teri gaand main kute ka lund
-Tere gaand mein keede paday
-Teri Jhanten Kaat kar tere mooh par laga kar unki french beard bana doonga.
-Teri ma gandi rundi
-Teri ma gadha ka lund choosay
-Teri maa ki bimaar badboodar choot
-Teri ma ki choot me hathi ka dum
-Teri ma ki chut mai sabka lund
-Teri maa ki phudi guy ki hai
+liya tha
+chunni choos
+lund choos
+Chuus Maro
+Raand
+Rundi
+chod
+lauda
+Chodhunga
+Ka Lund
+Teri Jhanten 
+gandi
+gadha ka lund
 Teri maa ka bhosda
-Teri maa ki chute
-Tere mai ki chut tere baap ka land
-Teri mi di kussi mey tera sarra khandan ko ghussa ker rakh doonga.
-Teri maa ki gaand ki baal mein jalaay hue, maarey hue chipkili ki unday.
-Teri ma ki budh mein chaarpai bichhake teri bahen ko chodun.
-Teri maa ki chut mein chatri leke ghus jaunga aur khol dunga.
-Tere maa ko sau kutte chode - sau wa tera baap!
+chute
+Tere mai ki chut 
+chodun.
+chut
+chode
 Tor mai ke chodho
 jaanvar
 kutta
@@ -844,7 +856,8 @@ Kutte ke tatte
 Maadher chod
 Padma
 Raand ka jamai
-Randhwa (or randwa)
+Randhwa
+randwa
 Rundi
 Rundi ka bacha
 Rundi Ki bachi
@@ -885,10 +898,6 @@ Bhosad Chod
 Bumchod
 Bur ki chatani
 Cuntmama
-Chipkali ke chut ke pasine
-Chipkali ke gaand ke pasine
-Chipkali ke jhaat ke baal
-Chippkali ke jhaant ke paseene
 Chodela
 Chodu bhagat
 Chhola Phudakna
@@ -900,10 +909,7 @@ Choot ke bhoot
 Chut ke dhakkan
 Chut mari ke
 Choot marani ka
-Chut ke pasine mein talay huye bhajiye
 Chup Ke Chut Hai
-Fatey condom kay natije
-Fatay huay lundtopi ka result
 Gaandu
 Gaandfat
 Gaandmasti
@@ -925,19 +931,13 @@ Lavde ke baal
 Maa ke bhadwe
 Muth maar
 Parichod
-Phatele Nirodh ke Natije
 Pucchi
 Raandi baajer
 Rundi ko choud
 Rubber bhosda
 Sadi hui gand
-Tera adha Nirodh mein rah gaya
-Hindi Obscene Words
 Apna land choos
-Apni gaand mein muthi daal
 Apni ma ko ja choos
-Chinaal ke gadde ke nipple ke baal ke joon
-Chullu bhar muth mein doob mar
 Gand Ka Khatmal
 Gandkate Kutte
 Gaand mein bambu
@@ -946,51 +946,21 @@ Gaand main danda
 Gaand main keera
 Hazaar lund teri gaand main
 Jaa Apni Bajaa
-Jab tu paida hua tow aagey se ya peechey se nikla tha chutiya?
-Kahe ko kha raha hai chut ki chapati aur lund ka beja?
-Kali Choot Ke Safaid Jhaat
-Kutte ke poot, teri maa ki choot
-Lo, mera lund anpi behen ko de do, agar khud na chod paya
 Lund Chus
 Ma chudi
-Mein teri maa ko teri bahen ki choot mein chodoonga aur tera baap laltern lekar aayega.
-Mein teri maa ko liya tha uski suhaag raat pei.
 Mera chunni choos
 Meri lund choos
 Mere Chuus Maro
-Na choot, na chooche, nakhre noor jahan ke!
-Raand ka pati
-Rundi ko chod
-Rundi ki tatti pe baithnewaali makkhi
-Rundi ke tatti pe biathne wala makhi
-Terey baad di gaand wich danda ghussa ker rakh dhungi.
-Teri behen ka launda rubber ka 
-Theri Biwi ko Tere Saamne Chodhunga
-Teri Gand Mein Haathi Ka Lund
-Teri gaand main kute ka lund
-Tere gaand mein keede paday
-Teri Jhanten Kaat kar tere mooh par laga kar unki french beard bana doonga.
-Teri ma gandi rundi
-Teri ma gadha ka lund choosay
-Teri maa ki bimaar badboodar choot
-Teri ma ki choot me hathi ka dum
-Teri ma ki chut mai sabka lund
-Teri maa ki phudi guy ki hai
-Teri maa ka bhosda
-Teri maa ki chute
-Tere mai ki chut tere baap ka land
-Teri mi di kussi mey tera sarra khandan ko ghussa ker rakh doonga.
-Teri maa ki gaand ki baal mein jalaay hue, maarey hue chipkili ki unday.
-Teri ma ki budh mein chaarpai bichhake teri bahen ko chodun.
-Teri maa ki chut mein chatri leke ghus jaunga aur khol dunga.
-Tere maa ko sau kutte chode - sau wa tera baap!
-Tor mai ke chodho
+choot
+chooche
+bhosda
+chute
+chode
+chodho
 aand
 aandal
 aandu
 aandupana
-abla naari tera buble bhaari
-apni gaand mein muthi daal
 apni lund choos
 apni ma ko ja choos
 backarchodu
@@ -2060,20 +2030,12 @@ teri maa ke bobe kha jaunga bhosdi ke
 teri maa ki bimaar badboodar choot
 teri maa ki choot
 teri maa ki choot me hathi ka dum
-teri maa ki choot me kutte ka lavda
-teri maa ki chut
-teri maa ki chut mai sabka lund
-teri maa ki chut mein chatri leke ghus jaunga aur khol dunga
+lavda
 teri maa ki chute
-teri maa ki gaand ki baal mein jalaay hue
-teri maa ki gaand ki baal mein jalaay hue maarey hue chupkili ki unday
-teri maa ki maari choot
-teri maa ki phudi guy ki hai
-teri maa ki sukhi bhos
+phudi
 teri maa ko chodun
-teri mi di kussi mey tera sarra khandan ko ggussa ker rakhdoungi
-teri mi di kussi mey tera sarra khandan ko ghussa ker rakh doonga
-teri phuphi ki choot mein
+chodun
+choot
 tharki
 theri biwi ko tere saamne chodhunga
 toota hua lund
