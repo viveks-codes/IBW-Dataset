@@ -262,7 +262,6 @@ hopa
 Huzefa
 jaaro
 Jhadhino!
-Jignesh Mevani
 karo loro
 kem chho
 kutari
