@@ -7,6 +7,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <style>
 
             .btnSubmit {
@@ -21,10 +22,28 @@
                 color: rgb(246, 246, 252);
                 margin-top: 4%;
             }
+            #pageloader
+{
+  background: rgba( 255, 255, 255, 0.8 );
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+#pageloader img
+{
+  left: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+  position: absolute;
+  top: 50%;
+}
         </style>
 
     </head>
-    <body>
+    <body><div class="container-fluid">
         <header class="text-gray-600 body-font">
             <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -39,11 +58,14 @@
 
             </div>
         </header>
+        <div id="pageloader">
+          <img src="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/images/loader-large.gif" alt="processing..." />
+       </div>
+</div>
 
+        <div class="container-fluid">
 
-        <div class="container">
-
-            <form method="post" autocomplete="off" name="google-sheet">
+            <form id="myform" method="post" autocomplete="off" name="google-sheet">
 
                 <div class="form-group">
 
@@ -83,6 +105,7 @@
                 <div class="form-group">
                     <input type="submit" name="submit" class="btnSubmit btn-block " value="Submit"/>
                 </div>
+                
             </form>
 
         </div>
@@ -219,7 +242,13 @@ Well, After submitting this form, we will review your submission and add your wo
 
 </div>
 
-</footer><script>const scriptURL = 'https://script.google.com/macros/s/AKfycbyHGOSVKPWzM7lTiCZYs3GH01uV1wSCGfFIPoRRRjGOzSioTO8/exec'
+</footer>
+<script>$(document).ready(function(){
+  $("#myform").on("submit", function(){
+    $("#pageloader").fadeIn();
+  });//submit
+});//document ready</script>
+<script>const scriptURL = 'https://script.google.com/macros/s/AKfycbyHGOSVKPWzM7lTiCZYs3GH01uV1wSCGfFIPoRRRjGOzSioTO8/exec'
 const form = document.forms['google-sheet']
 
 form.addEventListener('submit', e => {
