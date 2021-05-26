@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+<h1 align="center">Welcome to IBW_Dataset 👋</h1>
+<p>
+  <a href="ibw-dataset.herokuapp.com" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+</p>
 
-You can use the [editor on GitHub](https://github.com/vivolscute/INDIAN_Bad_Words_Dataset/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+> thisThe IBW dataset is an acronym that stands for the Indian Bad Words dataset. It is a dataset of thousands of abusive words which will be available in 14 different Indian languages
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### [CSV](ibw-dataset.herokuapp.com) [ 23.6MB ]
 
-### Markdown
+### [HDF5](https://osg-ny2.paperspace.io/tekeun9hs/tekeun9hs/datasets/dsrgt5fydni1tep/versions/1o9e4wj/data/ibw.h5?AWSAccessKeyId=7FZOXOZIC1MWW1TW4LUG&Expires=1622033164&Signature=PXnFin%2FW6Ct0VXMz9pz%2F9DWYQNs%3D)[ 25.1MB]
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### [Text](https://osg-ny2.paperspace.io/tekeun9hs/tekeun9hs/datasets/dsr3kni6g9kpshm/versions/jnuu5iy/data/IBW.txt?AWSAccessKeyId=7FZOXOZIC1MWW1TW4LUG&Expires=1622033324&Signature=3g0pNqA8%2BLjJoi5VX1IbDCtO5nE%3D) [57.1kB]
 
-```markdown
-Syntax highlighted code block
+### ✨ [Demo](testbrainfuck.herokuapp.com)
 
-# Header 1
-## Header 2
-### Header 3
+## Author
 
-- Bulleted
-- List
+👤 **Vivek Patel , Hunaid Nakhuda**
 
-1. Numbered
-2. List
+* Website: https://viveks.codes/vivek-codes
+* Github: [@vivolscute](https://github.com/vivolscute)
 
-**Bold** and _Italic_ and `Code` text
+## Show your support
 
-[Link](url) and ![Image](src)
-```
+Give a ⭐️ if this project helped you!
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vivolscute/INDIAN_Bad_Words_Dataset/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+***
