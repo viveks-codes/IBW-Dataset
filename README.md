@@ -1,11 +1,11 @@
-<h1 align="center">Welcome to IBW_Dataset 👋</h1>
+<h1 align="center">Welcome to IBW Dataset 👋</h1>
 <p>
   <a href="ibw-dataset.herokuapp.com" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
 </p>
 
-> thisThe IBW dataset is an acronym that stands for the Indian Bad Words dataset. It is a dataset of thousands of abusive words which will be available in 14 different Indian languages
+> The IBW dataset is an acronym that stands for the Indian Bad Words dataset. It is a dataset of thousands of abusive words which will be available in 14 different Indian languages.
 
 ### [CSV](ibw-dataset.herokuapp.com) [ 23.6MB ]
 
@@ -13,14 +13,9 @@
 
 ### [Text](https://osg-ny2.paperspace.io/tekeun9hs/tekeun9hs/datasets/dsr3kni6g9kpshm/versions/jnuu5iy/data/IBW.txt?AWSAccessKeyId=7FZOXOZIC1MWW1TW4LUG&Expires=1622033324&Signature=3g0pNqA8%2BLjJoi5VX1IbDCtO5nE%3D) [57.1kB]
 
-### ✨ [Demo](testbrainfuck.herokuapp.com)
+### ✨ [Home Page](testbrainfuck.herokuapp.com)
 
-## Author
 
-👤 **Vivek Patel , Hunaid Nakhuda**
-
-* Website: https://viveks.codes/vivek-codes
-* Github: [@vivolscute](https://github.com/vivolscute)
 
 ## Show your support
 
@@ -39,17 +34,27 @@ Here you can descibe how the data is organized in this whole dataset. How the da
 
 ```
 Give examples
-Root Dir/
-  -Sub Dir/
-    -DataFile1
-    -DataFile2
-    -...
-  -Sub Dir/
-    -Dir/
-      -DataFile1
-      -DataFile2
-      -...
-  -README.md
+Root
+├── data
+│   ├── ibw.csv
+│   ├── ibw.h5
+│   ├── IBW.txt
+│   ├── index.html
+│   └── Languages
+│       ├── all_LangsIND.csv
+│       ├── Assamese.csv
+│       ├── bangali.csv
+│       ├── bangla.csv
+│       └── urdu.csv
+├── docs
+│   ├── _config.yml
+│   └── index.md
+├── notebooks
+│   └── preprocessing.ipynb
+├── README.md
+└── synthetic data generation
+    └── DataGen.py
+
 
 ```
 
@@ -64,9 +69,17 @@ If the data includes images or audio, you can mention the file format eg.(.svg, 
 
 * [DataRepository](https://www.kaggle.com/datasets) - Link to the data repository.
 
-## Authors
+## 👤 Authors
 
-* **authorname** - *Initial work* - [shashvatshah9](https://github.com/shashvatshah9)
+* **authorname** - *Initial work* - [Vivek Patel](https://github.com/vivolscute)
+
+top 
+## Author
+
+ **Vivek Patel , Hunaid Nakhuda**
+
+* Website: https://viveks.codes/vivek-codes
+* Github: [@vivolscute](https://github.com/vivolscute)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
