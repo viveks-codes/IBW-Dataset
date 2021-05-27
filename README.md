@@ -15,7 +15,14 @@
 
 ### ✨ [Home Page](testbrainfuck.herokuapp.com)
 
+## Author
 
+👤 **Vivek Patel**
+
+
+👤**Hunaid Nakhuda**
+
+* Github : [@hunaid-nakhuda](https://github.com/hunaid-nakhuda)
 
 ## Show your support
 
