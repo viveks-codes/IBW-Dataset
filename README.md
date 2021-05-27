@@ -17,10 +17,14 @@
 
 ## Author
 
-👤 **Vivek Patel , Hunaid Nakhuda**
+👤 **Vivek Patel**
 
 * Website: https://viveks.codes/vivek-codes
 * Github: [@vivolscute](https://github.com/vivolscute)
+
+👤**Hunaid Nakhuda**
+
+* Github : [@hunaid-nakhuda](https://github.com/hunaid-nakhuda)
 
 ## Show your support
 
