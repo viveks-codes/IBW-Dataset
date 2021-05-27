@@ -46,8 +46,6 @@ Root
 ├── README.md
 └── synthetic data generation
     └── DataGen.py
-
-
 ```
 
 ### And file formats
@@ -61,17 +59,11 @@ If the data includes images or audio, you can mention the file format eg.(.svg, 
 
 * [DataRepository](https://www.kaggle.com/datasets) - Link to the data repository.
 
-## 👤 Authors
+## 👤 Author
 
 * **authorname** - *Initial work* - [Vivek Patel](https://github.com/vivolscute)
 
-top zz
-## Author
-
- **Vivek Patel , Hunaid Nakhuda**
-
-* Website: https://viveks.codes/vivek-codes
-* Github: [@vivolscute](https://github.com/vivolscute)
+* Github : [@hunaid-nakhuda](https://github.com/hunaid-nakhuda)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
@@ -84,10 +76,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
-### ✨ [Home Page](testbrainfuck.herokuapp.com)
 
-
-* Github : [@hunaid-nakhuda](https://github.com/hunaid-nakhuda)
 
 ## Show your support
 
