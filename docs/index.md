@@ -27,7 +27,6 @@ The IBW dataset is an acronym that stands for the Indian Bad Words dataset. It i
 Here you can descibe how the data is organized in this whole dataset. How the data is stored in all the files. You also have to brief about the naming convention of the files in different directories. 
 
 ```
-Give examples
 Root
 ├── data
 │   ├── ibw.csv
@@ -66,7 +65,7 @@ If the data includes images or audio, you can mention the file format eg.(.svg, 
 
 * **authorname** - *Initial work* - [Vivek Patel](https://github.com/vivolscute)
 
-top 
+top zz
 ## Author
 
  **Vivek Patel , Hunaid Nakhuda**
@@ -87,12 +86,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * etc
 ### ✨ [Home Page](testbrainfuck.herokuapp.com)
 
-## Author
-
-👤 **Vivek Patel**
-
-
-👤**Hunaid Nakhuda**
 
 * Github : [@hunaid-nakhuda](https://github.com/hunaid-nakhuda)
 
