@@ -20,15 +20,16 @@ The IBW dataset is an acronym that stands for the Indian Bad Words dataset. It i
 
 ## About Data collection methodology
 
+Data was collected from diffrent sources and website through web scrapping and also hundredes of users contributed to build this dataset.
 
 
 ### Description of the data
 
-Here you can descibe how the data is organized in this whole dataset. How the data is stored in all the files. You also have to brief about the naming convention of the files in different directories. 
+_data contains ( ibw.csv, ibw.h5, ibw.txt)
 
 ```
 Root
-├── data
+├── _data
 │   ├── ibw.csv
 │   ├── ibw.h5
 │   ├── IBW.txt
@@ -50,9 +51,11 @@ Root
 
 ### And file formats
 
-If the data includes images or audio, you can mention the file format eg.(.svg, .png, .mpeg).
+data includes(.csv, .txt, .h5).
 ```
--500 images, format svg.
+-39 Files, format csv.
+-1 Text, format txt.
+-1 File, format h5.
 ```
 
 ## Online Repository link
