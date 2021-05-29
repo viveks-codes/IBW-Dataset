@@ -5,6 +5,28 @@
   </a>
 </p>
 
+# Introduction
+<p align="center">
+  <a href="ibw-dataset.herokuapp.com" target="_blank">
+    <img alt="Documentation" src="https://content.indiainfoline.com/_media/iifl/img/article/2016-11/25/full/1480065591-6229.jpg" />
+  </a>
+</p>
+Internet has grown a lot in the last few years. According to The Telecom Regulatory Authority
+of India (TRAI), the number of Internet subscribers in India increased from 1,160.52 million at the end of Jun-20 to 1,168.66 million at the end of Sep-20, and is
+now worlds third largest internet user. Even social networking sites like Facebook have over 290 million active
+users in India (Times of India).<br>
+<br>Thus, detection of inappropriate use of language on internet which might harm
+the user is of utmost importance. With the advent of technology many devices and operating systems are now
+supporting Indian Languages, and hence there is a need for an insult detection system in Indian Languages. Insults act as a repelling
+force for new users and also prevent regular users to participate in discussions in future. It is also frustrating to
+find foul language when looking for something. It is also not possible to have a human moderator to monitor this
+enormous amount of data.
+<br><br>
+
+We focus on words that may be insulting or harmful for other person. Insults can be of many types
+like racial slurs, reference to handicap, foul language and provocative words. The indirect insults like sarcasm,
+disguise and crude words are not identified by the method. so our team collected data from diffrent users in diffrent languages from this [ form ](https://ibw-dataset.herokuapp.com)
+
 # About Dataset
 
 The IBW dataset is an acronym that stands for the Indian Bad Words dataset. It is a dataset of thousands of abusive words which will be available in 14 different Indian languages.
