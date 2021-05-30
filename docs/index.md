@@ -27,6 +27,41 @@ We focus on words that may be insulting or harmful for other person. Insults can
 like racial slurs, reference to handicap, foul language and provocative words. The indirect insults like sarcasm,
 disguise and crude words are not identified by the method. so our team collected data from diffrent users in diffrent languages from this [ form ](https://ibw-dataset.herokuapp.com)
 
+
+# Related Works
+
+Various Datasets have been created for the English language. For Hindi, there was no such database we manually created
+one. We tackled this problem in different ways.
+
+* Collected Abusive words by web-scrapping  from diffrent websites (1000 entries)
+
+* Created a list of bad words in Hindi, procured from various Hindi websites
+
+* Collected words from various Hindi pdfs and forums(600 entries).
+
+* Used Google Translate to convert the available Kaggle’s English dataset into Hindi(1000 entries) and
+then manually modified it to retain the context.
+
+*  Around 70% of the input is negative strings(non-insults).
+
+* Did a Deep down study on how Google Translate works for English to Hindi
+
+# Google Translate: a Deep Down Study
+
+We used Google Translate to convert English dataset into Hindi. As opposed to what one might expect with
+Google, it is not so awesome. It has its limitations but can at least help the user to understand the general
+meaning of a foreign text. Some languages produce better results than others, and works especially well when the
+target language is English and source language is one of the languages of European Union. The following were
+our conclusions from the study we did on English to Hindi translation according to the general results.<br> 
+* Word Translation
+
+* Some of the English insults were not translated since the corpus avialabe was not huge.(Fig 1.1)
+* Severity of several insults got reduced. Also, there is a similar many-to-one mapping of many insults
+to a single mid insult.(Fig 1B)
+* Meanings of many insults get lost in the literal translation of the statement. (Fig 1C)
+* Sentence Translation: Short sentences are good(Fig 2A) while long ones lose meaning(Fig 2B).
+* Idioms: Some are translated well(Fig 3A) while some are translated word to word and their meanings get
+lost(Fig 3B)
 # About Dataset
 
 The IBW dataset is an acronym that stands for the Indian Bad Words dataset. It is a dataset of thousands of abusive words which will be available in 14 different Indian languages.
