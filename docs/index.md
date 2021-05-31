@@ -53,15 +53,7 @@ Google, it is not so awesome. It has its limitations but can at least help the u
 meaning of a foreign text. Some languages produce better results than others, and works especially well when the
 target language is English and source language is one of the languages of European Union. The following were
 our conclusions from the study we did on English to Hindi translation according to the general results.<br> 
-* Word Translation
 
-* Some of the English insults were not translated since the corpus avialabe was not huge.(Fig 1.1)
-* Severity of several insults got reduced. Also, there is a similar many-to-one mapping of many insults
-to a single mid insult.(Fig 1B)
-* Meanings of many insults get lost in the literal translation of the statement. (Fig 1C)
-* Sentence Translation: Short sentences are good(Fig 2A) while long ones lose meaning(Fig 2B).
-* Idioms: Some are translated well(Fig 3A) while some are translated word to word and their meanings get
-lost(Fig 3B)
 # About Dataset
 
 The IBW dataset is an acronym that stands for the Indian Bad Words dataset. It is a dataset of thousands of abusive words which will be available in 14 different Indian languages.
