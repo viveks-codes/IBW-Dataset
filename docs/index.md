@@ -107,6 +107,16 @@ data includes(.csv, .txt, .h5).
 -1 File, format h5.
 ```
 
+# Overview of Data
+
+* Most of Data is from Hindi langauges Because Hindi 
+is majorly spoken in India 
+
+  - ![](./wc.png)
+
+* some words are so much common and easy to find
+
+- ![](./graph1.jpg)
 ## Online Repository link
 
 * [DataRepository](https://www.kaggle.com/datasets) - Link to the data repository.
