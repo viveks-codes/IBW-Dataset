@@ -46,7 +46,7 @@ then manually modified it to retain the context.
 
 * Did a Deep down study on how Google Translate works for English to Hindi
 
-# Google Translate: a Deep Down Study
+# Google Translate: a Study
 
 We used Google Translate to convert English dataset into Hindi. As opposed to what one might expect with
 Google, it is not so awesome. It has its limitations but can at least help the user to understand the general
@@ -87,7 +87,7 @@ Root
 │       ├── language_0.csv
 │       ├── language_1.csv
 │       ├── language_2.csv
-│       └── language_N.csv
+│       └── language_N.csv // N = Number of Languages
 ├── docs
 │   ├── _config.yml
 │   └── index.md
@@ -125,9 +125,9 @@ is majorly spoken in India
 
 * **authorname** - *Initial work* - [Vivek Patel](https://github.com/vivolscute)
 
-* Github : [@hunaid-nakhuda](https://github.com/hunaid-nakhuda)
+* **Data Collector** - *Web Development* - [Hunaid nakhuda](https://github.com/hunaid-nakhuda)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/vivolscute/INDIAN_Bad_Words_Dataset/graphs/contributors) who participated in this project.
 
 ## License
 
@@ -135,11 +135,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* [https://www.youswear.com](https://www.youswear.com)
+* [https://pypi.org/project/better-profanity/](https://pypi.org/project/better-profanity/)
+* [https://www.scribd.com/doc/136875132/Punjabi-Insults](https://www.scribd.com/doc/136875132/Punjabi-Insults)
 
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ if [this project](https://github.com/vivolscute/INDIAN_Bad_Words_Dataset) helped you!
