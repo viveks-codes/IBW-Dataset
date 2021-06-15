@@ -120,11 +120,11 @@ data includes(.csv, .txt, .h5).
 * Most of Data is from Hindi langauges Because Hindi 
 is majorly spoken in India 
 
-  - ![](./wc.png)
+  - ![](docs/wc.png)
 
 * some words are so much common and easy to find
 
-- ![](./graph1.jpg)
+- ![](docs/graph1.jpg)
 ## Online Repository link
 
 * [DataRepository](https://www.kaggle.com/datasets) - Link to the data repository.
