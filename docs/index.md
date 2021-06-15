@@ -81,21 +81,29 @@ Root
 ├── _data
 │   ├── ibw.csv
 │   ├── ibw.h5
-│   ├── IBW.txt
-│   ├── index.html
-│   └── Languages
-│       ├── language_0.csv
-│       ├── language_1.csv
-│       ├── language_2.csv
-│       └── language_N.csv // N = Number of Languages
+│   ├── ibw.txt
+│   └── Languages
+│       ├── language_0.csv
+│       ├── language_1.csv
+│       ├── language_2.csv
+│       └── language_N.csv // N = Number of Languages
 ├── docs
 │   ├── _config.yml
-│   └── index.md
+│   ├── graph1.jpg
+│   ├── graph1.png
+│   ├── index.md
+│   ├── promo
+│   │   └── index.html
+│   └── wc.png
+├── LICENSE
 ├── notebooks
-│   └── preprocessing.ipynb
 ├── README.md
 └── synthetic data generation
-    └── DataGen.py
+    ├── DataGen.py
+    └── preprocessing.ipynb
+
+6 directories, 51 files
+
 ```
 
 ### And file formats
