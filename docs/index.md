@@ -127,7 +127,7 @@ is majorly spoken in India
 - ![](./graph1.jpg)
 ## Online Repository link
 
-* [DataRepository](https://www.kaggle.com/datasets) - Link to the data repository.
+* [DataRepository](https://viveks.codes/INDIAN_Bad_Words_Dataset/) - Link to the data repository.
 
 ## 👤 Author
 
@@ -139,7 +139,7 @@ See also the list of [contributors](https://github.com/vivolscute/INDIAN_Bad_Wor
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/vivolscute/INDIAN_Bad_Words_Dataset/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 
